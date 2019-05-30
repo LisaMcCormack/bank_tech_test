@@ -8,6 +8,10 @@ function ThermoStat(){
         return this._degrees;
     };
 
+    this.reset = function(){
+        this._degrees = 20;
+    };
+
     this.up = function(){
         if(this._degrees === this.maxDegrees) { throw 'Do you want to catch a fire?' ;};
         this._degrees++;

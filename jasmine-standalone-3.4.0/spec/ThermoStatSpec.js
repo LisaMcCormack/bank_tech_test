@@ -29,6 +29,12 @@ describe ('A thermostat:', function() {
         console.log(thermoStat._degrees);
     });
 
+    it ('temperature can be reset to 20', function() {
+        thermoStat.up();
+        thermoStat.reset();
+        expect(thermoStat._degrees).toEqual(20);
+    });
+
     describe('Power saving mode:', function() {
         
         it('has a switch', function(){
