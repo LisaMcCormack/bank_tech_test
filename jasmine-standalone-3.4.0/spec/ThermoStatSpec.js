@@ -67,6 +67,23 @@ describe ('A thermostat:', function() {
             });
         });
 
+    });
 
+    describe ('Energy usage:', function(){
+       
+        it('Is low-usage', function () {
+            thermoStat._degrees = 17
+            expect(thermoStat.EnergyUsage()).toEqual('low-energy usage');
+        });
+        
+        it('Is medium-usage', function () {
+            thermoStat._degrees = 24 
+            expect(thermoStat.EnergyUsage()).toEqual('medium-energy usage');
+        });
+
+        it('Is high-usage', function () {
+            thermoStat._degrees = 26
+            expect(thermoStat.EnergyUsage()).toEqual('high-energy usage');
+        });
     });
 });  

@@ -24,3 +24,11 @@
 
 ## Spec 4 
 - Created a custom error that throws an exception if the decrement function causes the object's temperature to go below a minimum integer. 
+
+
+
+
+
+Keeping an organised nesting of our tests made it easy to read and debug:
+
+![amazingspecnesting](./images/specshot.png)

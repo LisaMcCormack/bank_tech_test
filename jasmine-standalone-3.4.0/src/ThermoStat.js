@@ -35,6 +35,15 @@ function ThermoStat(){
             this.PowerSavingMode = true;
 
         };
-
     };
+
+    this.EnergyUsage = function(){
+        if (this._degrees < 18) {
+            return "low-energy usage";
+        } else if (this._degrees < 25) { 
+            return "medium-energy usage"
+        } else {
+            return "high-energy usage"
+        }
+    }; 
 };
