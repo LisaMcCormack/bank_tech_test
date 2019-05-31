@@ -1,6 +1,6 @@
-# THERMOSTAT 
+# THERMOSTAT
 
-## Specification 
+## Specification
 - Thermostat starts at 20 degrees
 - You can increase the temperature with an up function
 - You can decrease the temperature with a down function
@@ -17,17 +17,29 @@
 - Created a thermometer constructor function with a default state variable.
 
 ## Spec 2
-- Created a function within the constructor that edits the private state variable with a increment operator. 
+- Created a function within the constructor that edits the private state variable with a increment operator.
 
-## Spec 3 
+## Spec 3
 - Created a function within the constructor that edits the private state variable with a decrement operator.
 
-## Spec 4 
-- Created a custom error that throws an exception if the decrement function causes the object's temperature to go below a minimum integer. 
+## Spec 4
+- Created a custom error that throws an exception if the decrement function causes the object's temperature to go below a minimum integer.
+
+---
+
+### jquery interface
+
+jquery can serve as an interface between our page (index.html) and our model (ThermoStat.rb). The main feature it provides for this event listeners and handlers.
+
+### Callbacks
+
+To indicate the energy usage, we used a callback to change the background colour. We passed a function as an argument in a function that is called after every interaction with the page.
 
 
 
+---
 
+## Process
 
 Keeping an organised nesting of our tests made it easy to read and debug:
 

@@ -1,7 +1,7 @@
 function ThermoStat(){
-    
-    this._degrees = 20; 
-    this.PowerSavingMode = true;
+
+    this._degrees = 20;
+    this.PowerSavingMode = 'on';
     this.maxDegrees = 25;
 
     this.temperature = function(){
@@ -22,28 +22,32 @@ function ThermoStat(){
         this._degrees--;
     };
 
+    this.psm = function(){
+      return this.PowerSavingMode;
+    };
+
     this.PowerSavingSwitch = function(){
-        
-        if(this.PowerSavingMode === true) {
-            
+
+        if(this.PowerSavingMode === 'on') {
+
             this.maxDegrees = 32;
-            this.PowerSavingMode = false;
+            this.PowerSavingMode = 'off';
 
         } else {
 
             this.maxDegrees = 25;
-            this.PowerSavingMode = true;
+            this.PowerSavingMode = 'on';
 
         };
     };
 
     this.EnergyUsage = function(){
         if (this._degrees < 18) {
-            return "low-energy usage";
-        } else if (this._degrees < 25) { 
-            return "medium-energy usage"
+            return "lightgreen";
+        } else if (this._degrees < 25) {
+            return "orange"
         } else {
-            return "high-energy usage"
+            return "red"
         }
-    }; 
+    };
 };
