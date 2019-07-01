@@ -1,4 +1,5 @@
 
+```
 User story 1
 As a user
 So I can see how much money is in my BankAccount
@@ -45,3 +46,4 @@ statement.debit('13/01/2012', 500);
 'date || credit || debit || balance'
 13/01/2012','||', 500, 500,
 10/01/2012', 1000, '||', 1000,
+```
