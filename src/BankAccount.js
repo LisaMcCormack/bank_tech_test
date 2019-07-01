@@ -3,15 +3,15 @@
 
     this._balance = 0;
 
-    this.balance = function() {
+    BankAccount.prototype.balance = function() {
       return this._balance;
     }
 
-    this.makeDeposit = function(amount, date) {
+    BankAccount.prototype.makeDeposit = function(amount) {
       this._balance += amount;
     }
 
-    this.makeWithdrawal = function(amount, date) {
+    BankAccount.prototype.makeWithdrawal = function(amount) {
       this._balance -= amount;
     }
 
