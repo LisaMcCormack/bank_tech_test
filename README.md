@@ -88,6 +88,7 @@ bankAccount.makeDeposit('10/01/2012', 1000);
 bankAccount.makeDeposit('13/01/2012', 2000);
 bankAccount.makeWithdrawal('14/01/2012', 500)
 statement = new Statement(bankAccount);
+statement.print();
 'date || credit || debit || balance'
 14/01/2012','||','||', 500,'||', 2500,
 13/01/2012','||', 2000, '||','||' 3000,
